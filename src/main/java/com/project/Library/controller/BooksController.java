@@ -13,7 +13,7 @@ public class BooksController {
 
 	@GetMapping
 	public ResponseEntity<Books> findAll(){
-		Books b = new Books(null, "Harry Potter", "Fulano", 100.0);
+		Books b = new Books(1L, "Harry Potter", "Fulano", 100.0);
 		return ResponseEntity.ok().body(b);
 	}
 }
