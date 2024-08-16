@@ -19,8 +19,8 @@ public class TestConfig implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Books b1 = new Books(null, "Name1", "Author1", 100.0);
-		Books b2 = new Books(null, "Name2", "Author2", 150.0);
+		Books b1 = new Books(null, "Name1", "Author1", 100.0, 5);
+		Books b2 = new Books(null, "Name2", "Author2", 150.0, 3);
 		
 		booksRepository.saveAll(Arrays.asList(b1, b2));
 	}
